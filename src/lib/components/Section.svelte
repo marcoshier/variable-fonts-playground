@@ -15,6 +15,7 @@
     </div>
     <Textbox 
         fontName = { data.title }
+        fontSize = { data.sizePx }
         defaultText = { data.defaultText }
         axes = { data.axes }>
     </Textbox>
@@ -40,8 +41,8 @@
     }
 
     :global(.title-container) {
+        font-family: "Fase";
         width: 400px;
-        font-family: sans-serif;
         font-weight: 500;
         font-size: 16px;
         color: black;
@@ -49,7 +50,6 @@
 
     :global(.year-container) {
         max-width: 80px;
-        font-family: sans-serif;
         font-weight: 300;
         font-size: 14px;
         color: gray;

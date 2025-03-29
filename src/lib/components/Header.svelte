@@ -41,7 +41,12 @@
         box-sizing: content-box;
     }
 
+    .sticky .title-container {
+        font-family: "Fase";
+    }
+
     .header-title {
+        font-family: "Fase";
         min-width: 150px;
         font-weight: 800;
         margin-left: -800px;

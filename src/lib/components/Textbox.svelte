@@ -2,13 +2,14 @@
     import '../../styles/fonts.css';
     import { onMount } from "svelte";
 
-    let { fontName, defaultText, axes } = $props();
+    let { fontName, fontSize, defaultText, axes } = $props();
     let axesValues = $state(axes.map(() => "50"));
 
     let el;
 
     onMount(() => {
         el.style.fontFamily = fontName + ', serif';
+        el.style.fontSize = fontSize + 'px';
     })
 
     function generateStyles(values) {
@@ -22,8 +23,6 @@
         }
         return rules
     }
-
-
 </script>
 
 <div class="text-container">
@@ -107,7 +106,6 @@
         margin-top: -5px;
     }
 
-
     .slider-container input::-webkit-slider-runnable-track {
         width: 100%;
         height: 10px;
@@ -117,12 +115,6 @@
         border: 0;
         margin-left: 8px;
         box-shadow: 0px 0px 20px 3px rgba(182,151,230,0.6);
-        transition: all 0.75 ease-in-out;
-    }
-
-    .slider-container input:focus::-webkit-slider-runnable-track {
-        box-shadow: 0px 0px 30px 6px rgba(182,151,230,0.);
-        transition: all 0.75 ease-in-out;
     }
 
     .slider-container input::-moz-range-track {
@@ -134,7 +126,6 @@
         border: 0;
         margin-left: 8px;
         box-shadow: 0px 0px 20px 3px rgba(182,151,230,0.6);
-        transition: all 0.75 ease-in-out;
     }
 
 </style>

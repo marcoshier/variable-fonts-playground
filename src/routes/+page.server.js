@@ -8,6 +8,7 @@ export const load = () => {
                 defaultText: "GRADUAT SHOW",
                 year: "2024",
                 fontFile: "NymfeVF.woff2",
+                sizePx: 90,
                 axes: [
                     {
                         title: "Calligraphy Axis",
@@ -19,9 +20,10 @@ export const load = () => {
             },
             {
                 title: "NymfeDots",
-                defaultText: "GRADUAT SHOW",
+                defaultText: "GRADU3TION SH7W 2064",
                 year: "2024",
                 fontFile: "NymfeDotsVF.woff2",
+                sizePx: 110,
                 axes: [
                     {
                         title: "Weight Axis",
@@ -42,6 +44,7 @@ export const load = () => {
                 defaultText: "Wild Goose-Chase!",
                 year: "2024",
                 fontFile: "NeedleworkVF.woff2",
+                sizePx: 130,
                 axes: [
                     {
                         title: "Chess Axis",
@@ -56,6 +59,7 @@ export const load = () => {
                 defaultText: "Body of WATER",
                 year: "2024",
                 fontFile: "NeedleworkStichesVF.woff2",
+                sizePx: 130,
                 axes: [
                     {
                         title: "Chess Axis",
